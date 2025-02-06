@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 text-gray-900">
+    <div class="container mx-auto py-0">
+        
+        <center>
+
+            <div class="bg-gradient-to-r from-pink-500 to-blue-500 text-white p-4">
+                <h1 class="text-3xl font-bold text-center"> Mandal Art Keychains </h1>
+            </div>
+        <p class="text-xl font-semibold text-gray-800 mb-4">
+            <span class="text-red-400">Normal Keychain</span> - <span class="text-green-500">&#8377;200</span>
+            <br>
+            <span class="text-red-600">Named Keychain</span> - <span class="text-green-800">&#8377;220 </span>
+        </p>
+        </center>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product Card Template -->
+
+            <!--Product 4 -->
+            <div class="bg-gradient-to-r from-purple-100 to-indigo-200 p-4 rounded-lg shadow-lg" id="product-4">
+                <img src="static/images/product4-img1.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-4" onclick="openModal(4)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product4-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(4, 'static/images/product4-img1.jpg')">
+                    <img src="static/images/product4-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(4, 'static/images/product4-img2.jpg')">
+                    <img src="static/images/product4-img3.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(4, 'static/images/product4-img3.jpg')">
+                    <img src="static/images/product4-img4.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(4, 'static/images/product4-img4.jpg')">
+                </div>
+                <center><h2 class="text-xl font-semibold mt-3">Chaitra (ಚೈತ್ರ) – Spring Season 🌸</h2></center>
+            </div>
+
+            <!--Product 5 -->
+            <div class="bg-gradient-to-r from-red-100 to-orange-200 p-4 rounded-lg shadow-lg" id="product-5">
+                <img src="static/images/product5-img1.jpg" alt="Product 5" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-5" onclick="openModal(5)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product5-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(5, 'static/images/product5-img1.jpg')">
+                    <img src="static/images/product5-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(5, 'static/images/product5-img2.jpg')">
+                </div>
+                <center><h2 class="text-xl font-semibold mt-3">Deepa (ದೀಪ) – Light/Lamp 🪔</h2></center>
+            </div>
+
+            <!--Product 6 -->
+            <div class="bg-gradient-to-r from-yellow-100 to-pink-200 p-4 rounded-lg shadow-lg" id="product-6">
+                <img src="static/images/product6-img1.jpg" alt="Product 6" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-6" onclick="openModal(6)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product6-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(6, 'static/images/product6-img1.jpg')">
+                    <img src="static/images/product6-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(6, 'static/images/product6-img2.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Aaraga (ಆರಗ) – Breeze 🍃</h2>
+                </center>
+            </div>
+
+            <!--Product 7 -->
+            <div class="bg-gradient-to-r from-green-100 to-yellow-100 p-4 rounded-lg shadow-lg" id="product-7">
+                <img src="static/images/product7-img1.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-7" onclick="openModal(7)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product7-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(7, 'static/images/product7-img1.jpg')">
+                    <img src="static/images/product7-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(7, 'static/images/product7-img2.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Agni (ಅಗ್ನಿ) – Fire🔥</h2>
+                </center>
+            </div>
+
+            <!--Product 8 -->
+            <div class="bg-gradient-to-r from-yellow-50 to-brown-100 p-4 rounded-lg shadow-lg" id="product-8">
+                <img src="static/images/product8-img1.jpg" alt="Product 8" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-8" onclick="openModal(8)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product8-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(8, 'static/images/product8-img1.jpg')">
+                    <img src="static/images/product8-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(8, 'static/images/product8-img2.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Ravi (ರವಿ) – SUN 🌞</h2>
+                </center>
+            </div>
+
+            <!--Product 9 -->
+            <div class="bg-gradient-to-r from-blue-50 to-green-100 p-4 rounded-lg shadow-lg" id="product-9">
+                <img src="static/images/product9-img1.jpg" alt="Product 9" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-9" onclick="openModal(9)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product9-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(9, 'static/images/product9-img1.jpg')">
+                    <img src="static/images/product9-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(9, 'static/images/product9-img2.jpg')">
+                    <img src="static/images/product9-img3.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(9, 'static/images/product9-img3.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Manjari (ಮಂಜರಿ) – A cluster of flowers 🌺</h2>
+                </center>
+            </div>
+
+            <!--Product 10 -->
+            <div class="bg-gradient-to-r from-pink-100 to-blue-200 p-4 rounded-lg shadow-lg" id="product-10">
+                <img src="static/images/product10-img1.jpg" alt="Product 10" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-10" onclick="openModal(10)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product10-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(10, 'static/images/product10-img1.jpg')">
+                    <img src="static/images/product10-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(10, 'static/images/product10-img2.jpg')">
+                    <img src="static/images/product10-img3.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(10, 'static/images/product10-img3.jpg')">
+                    <img src="static/images/product10-img4.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(10, 'static/images/product10-img4.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Aalaya (ಆಲಯ) – Abode (symbolizing serenity) 🏡</h2>
+                </center>
+            </div>
+
+            <!--Product 11 -->
+            <div class="bg-gradient-to-r from-green-100 to-teal-200 p-4 rounded-lg shadow-lg" id="product-11">
+                <img src="static/images/product11-img1.jpg" alt="Product 11" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-11" onclick="openModal(11)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product11-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(11, 'static/images/product11-img1.jpg')">
+                    <img src="static/images/product11-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(11, 'static/images/product11-img2.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Nisarga (ನಿಸರ್ಗ) – Nature 🌿</h2>
+                </center>
+            </div>
+
+            <!--Product 12 -->
+            <div class="bg-gradient-to-r from-orange-100 to-yellow-200 p-4 rounded-lg shadow-lg" id="product-12">
+                <img src="static/images/product12-img1.jpg" alt="Product 12" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-12" onclick="openModal(12)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product12-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(12, 'static/images/product12-img1.jpg')">
+                    <img src="static/images/product12-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(12, 'static/images/product12-img2.jpg')">
+                    <img src="static/images/product12-img3.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(12, 'static/images/product12-img3.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Belaku (ಬೆಳಕು) – Light/Radiance ✨</h2>
+                </center>
+            </div>
+
+             <!--Product 13 -->
+             <div class="bg-gradient-to-r from-green-100 to-teal-200 p-4 rounded-lg shadow-lg" id="product-13">
+                <img src="static/images/product13-img1.jpg" alt="Product 13" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-13" onclick="openModal(13)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product13-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(13, 'static/images/product13-img1.jpg')">
+                    <img src="static/images/product13-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(13, 'static/images/product13-img2.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Tejas (ತೇಜಸ್) – Glow / Brilliance 🔥</h2>
+                </center>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="bg-gradient-to-r from-pink-100 to-blue-200 p-4 rounded-lg shadow-lg" id="product-1">
+                <img src="static/images/product1-img1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-1" onclick="openModal(1)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product1-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(1, 'static/images/product1-img1.jpg')">
+                    <img src="static/images/product1-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(1, 'static/images/product1-img2.jpg')">
+                    <img src="static/images/product1-img3.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(1, 'static/images/product1-img3.jpg')">
+                </div>
+                <center>
+                    <h2 class="text-xl font-semibold mt-3">Mallige (ಮಲ್ಲಿಗೆ) – Jasmine 🌼</h2>
+                </center>
+            </div>
+
+            <!-- Repeat for 12 products with unique IDs -->
+             <!--Product 2 -->
+            <div class="bg-gradient-to-r from-green-100 to-teal-200 p-4 rounded-lg shadow-lg" id="product-2">
+                <img src="static/images/product2-img1.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-2" onclick="openModal(2)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product2-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(2, 'static/images/product2-img1.jpg')">
+                    <img src="static/images/product2-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(2, 'static/images/product2-img2.jpg')">
+                </div>
+                <center><h2 class="text-xl font-semibold mt-3">Gagana (ಗಗನ) – Sky ☁️</h2></center>
+            </div>
+            <!--Product 3 -->
+            <div class="bg-gradient-to-r from-orange-100 to-yellow-200 p-4 rounded-lg shadow-lg" id="product-3">
+                <img src="static/images/product3-img1.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-md cursor-pointer" id="img-3" onclick="openModal(3)">
+                <div class="flex justify-center mt-2 space-x-2">
+                    <img src="static/images/product3-img1.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(3, 'static/images/product3-img1.jpg')">
+                    <img src="static/images/product3-img2.jpg" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeImage(3, 'static/images/product3-img2.jpg')">
+                </div>
+                <center><h2 class="text-xl font-semibold mt-3">Hamsa (ಹಂಸ) – Swan 🦢</h2></center>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6">
+        <div class="text-center">
+          <p class="text-lg">Contact: <a href="mailto:phyrnna05@gmail.com" class="text-yellow-400 hover:text-yellow-500">phyrnna05@gmail.com</a></p>
+          <p class="text-lg">Instagram: <a href="https://www.instagram.com/novaa_lunaa?igsh=am9rdXF2Mm03ZDI=" target="_blank" class="text-yellow-400 hover:text-yellow-500">@novaa_lunaa</a></p>
+        </div>
+      </footer>
+      
+
+    
+    <!-- Full-Screen Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center hidden">
+        <div class="relative w-full h-full flex justify-center items-center">
+            <button class="absolute top-5 right-5 text-white text-3xl" onclick="closeModal()">✖</button>
+            <img id="modal-img" src="" class="max-w-full max-h-full object-contain">
+            <div class="absolute bottom-5 flex space-x-2" id="modal-thumbnails"></div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(productId, newSrc) {
+            document.getElementById(`img-${productId}`).src = newSrc;
+        }
+
+        function openModal(productId) {
+    const mainImg = document.getElementById(`img-${productId}`).src;
+    document.getElementById("modal-img").src = mainImg;
+    document.getElementById("modal").classList.remove("hidden");
+
+    const thumbnails = document.getElementById(`product-${productId}`).querySelectorAll(".cursor-pointer");
+    const modalThumbnails = document.getElementById("modal-thumbnails");
+    modalThumbnails.innerHTML = "";
+
+    // First, add the main image as a thumbnail
+    const mainThumb = document.createElement("img");
+    mainThumb.src = mainImg;
+    mainThumb.className = "w-16 h-16 object-cover rounded-md cursor-pointer border-2 border-white";
+    mainThumb.onclick = () => document.getElementById("modal-img").src = mainImg;
+    modalThumbnails.appendChild(mainThumb);
+
+    // Then, add other images while preventing duplication
+    thumbnails.forEach(img => {
+        if (img.src !== mainImg) {  // Add only if it's not the main image (to prevent duplicate)
+            const thumb = document.createElement("img");
+            thumb.src = img.src;
+            thumb.className = "w-16 h-16 object-cover rounded-md cursor-pointer border-2 border-white";
+            thumb.onclick = () => document.getElementById("modal-img").src = img.src;
+            modalThumbnails.appendChild(thumb);
+        }
+    });
+}
+
+
+
+        function closeModal() {
+            document.getElementById("modal").classList.add("hidden");
+        }
+    </script>
+</body>
+</html>
